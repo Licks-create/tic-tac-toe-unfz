@@ -1,0 +1,19 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .parent{
+    border: 1px solid ;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: black;
+    margin: auto;
+  }
+  .child{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: inherit;
+  }
