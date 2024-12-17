@@ -41,8 +41,14 @@ function App() {
               width: "100px",
               height: "100px",
               backgroundColor: "",
-              borderRight: "8px solid rgb(94, 94, 94)",
-              borderBottom: "8px solid rgb(94, 94, 94)",
+              borderBottom:
+                index != 6 && index != 7 && index != 8
+                  ? "8px solid rgb(94, 94, 94)"
+                  : "",
+              borderRight:
+                index != 2 && index != 5 && index != 8
+                  ? "8px solid rgb(94, 94, 94)"
+                  : "",
               pointerEvents: clickedBoxed[index] ? "none" : "auto",
               cursor: clickedBoxed[index] ? "none" : "pointer",
               boxSizing: "border-box",
@@ -52,9 +58,7 @@ function App() {
             }}
             onClick={() => handleOnClick(index)}
             id={index}
-          >
-            {/* {gameStarted || ""} */}
-          </div>
+          ></div>
         ))}
       </div>
 
